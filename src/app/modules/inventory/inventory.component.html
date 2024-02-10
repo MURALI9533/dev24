@@ -1,0 +1,25 @@
+<section  class="tbl-section">
+    <!--for demo wrap-->
+    <h1>Inventory Details</h1>
+      <table cellpadding="0" class="content-table" cellspacing="0" border="0">
+        <thead>
+          <tr>
+            <th>Product Id</th>
+            <th>Product Name</th>
+            <th>Product Qty</th>
+            <th>Price</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product of responseData">
+            <td>{{product.productCode}}</td>
+            <td>{{product.productName}}</td>
+            <td>{{product.productQuantity}}</td>
+            <td>{{product.productPrice}}</td>
+            <td>{{product.productDescription}}</td>
+          </tr>
+        </tbody>
+      </table>
+  </section>
+  
